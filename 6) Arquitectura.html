@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Arquitectura</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+  <div class="shadow-lg p-3 mb-5" class="navbar navbar-expand-md bg-dark navbar-dark">  
+  <h6><a class="navbar-brand" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/1) index.html" style="color:light blue">inicio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+    <span class="navbar-toggler-icon">­<h5>≡</h5></span> 
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/2) Historia.html">Adquisición por parte de Google</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/3) Seguridad.html">Filtraciones masivas en 2013 y 2014. ¿Cambió algo en 2020?</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/4) Caracteristicas.html">Caracteristicas y curiosidades</a>
+      </li>     
+        <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/5) Diseño.html">Diseño</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/6) Arquitectura.html">Arquitectura</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/7) SDK.html">Desarrolla una app con Android SDK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/8) Publicar una App.html">Publicar una App</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/9) Google Play.html">Google Play</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/10) Versiones.html">¿Fin de Android? 2020 y nuevos lanzamientos</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="../Lopez Tomas TP5 Bootstrap Grupo A 7mo 2da/11) 5G.html">Por culpa del 5G todo será más caro
+    </a>
+    </ul>
+    </h6>
+  </div>  
+  </div>
+<br>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h3>Arquitectura</h3>
+    <p>Los componentes principales del sistema operativo de Android (cada sección se describe en detalle):
+   </p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+      Arquitectura
+    </button>
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Arquitectura</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="Arquitectura.png">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <p><br></p>
+    <p><h6>Aplicaciones:</h6>
+    las aplicaciones base incluyen un cliente de correo electrónico, programa de SMS, calendario, mapas, navegador, contactos y otros. Todas las aplicaciones están escritas en lenguaje de programación Java.</p>
+    <p><h6>Marco de trabajo de aplicaciones:</h6>
+    los desarrolladores tienen acceso completo a los mismas API del entorno de trabajo usados por las aplicaciones base. La arquitectura está diseñada para simplificar la reutilización de componentes; cualquier aplicación puede publicar sus capacidades y cualquier otra aplicación puede luego hacer uso de esas capacidades (sujeto a reglas de seguridad del framework). Este mismo mecanismo permite que los componentes sean reemplazados por el usuario.</p>
+    <p><h6>Bibliotecas:</h6>
+      Android incluye un conjunto de bibliotecas de C/C++ usadas por varios componentes del sistema. Estas características se exponen a los desarrolladores a través del marco de trabajo de aplicaciones de Android. Algunas son: System C library (implementación biblioteca C estándar), bibliotecas de medios, bibliotecas de gráficos, 3D y SQLite, entre otras.</p>
+    <p><h6>Runtime de Android:</h6>
+      Android incluye un set de bibliotecas base que proporcionan la mayor parte de las funciones disponibles en las bibliotecas base del lenguaje Java. Cada aplicación Android corre su propio proceso, con su propia instancia de la máquina virtual Dalvik. Dalvik ha sido escrito de forma que un dispositivo puede correr múltiples máquinas virtuales de forma eficiente. Dalvik ejecutaba hasta la versión 5.0 archivos en el formato de ejecutable Dalvik (.dex), el cual está optimizado para memoria mínima. La Máquina Virtual está basada en registros y corre clases compiladas por el compilador de Java que han sido transformadas al formato.dex por la herramienta incluida dx. Desde la versión 5.0 utiliza el ART, que compila totalmente al momento de instalación de la aplicación.</p>
+    <p><h6>Núcleo Linux:</h6>
+      Android depende de Linux para los servicios base del sistema como seguridad, gestión de memoria, gestión de procesos, pila de red y modelo de controladores. El núcleo también actúa como una capa de abstracción entre el hardware y el resto de la pila de software.</p>
+    </div> 
+    </div>
+
+<br><br><br><br>
+
+</body>
+</html>
+
+
